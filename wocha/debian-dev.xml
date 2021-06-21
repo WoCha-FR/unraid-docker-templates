@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Debian-Dev</Name>
+  <Repository>jeremiec82/debian-dev</Repository>
+  <Registry>https://hub.docker.com/u/jeremiec82/debian-dev/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Jeremie-C/docker-template</Project>
+  <Overview>Apercu</Overview>
+  <Category>Other: Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/debian-dev.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/debian.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Apercu</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+</Container>

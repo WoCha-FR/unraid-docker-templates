@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ReadsbNet</Name>
+  <Repository>jeremiec82/readsb-net</Repository>
+  <Registry>https://hub.docker.com/u/jeremiec82/readsb-net/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Jeremie-C/docker-readsb-net</Project>
+  <Overview>Mode-S/ADSB/TIS decoder running in a docker container.</Overview>
+  <Category>Network:Other Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/readsbnet.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/readsb.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Mode-S/ADSB/TIS decoder running in a docker container.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>LAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>LON</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>172.17.0.2</Value>
+      <Name>BEAST_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>30005</Value>
+      <Name>BEAST_PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Receiver surface latitude" Target="LAT" Default="" Mode="" Description="Receiver surface latitude" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Receiver surface longitude" Target="LON" Default="" Mode="" Description="Receiver surface longitude" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="IP of remote readsb / dump1090 server" Target="BEAST_HOST" Default="172.17.0.2" Mode="" Description="IP of remote readsb / dump1090 server" Type="Variable" Display="always" Required="true" Mask="false">172.17.0.2</Config>
+  <Config Name="Port of remote dump190 server" Target="BEAST_PORT" Default="30005" Mode="" Description="specified as argument --net-bo-port on remote system" Type="Variable" Display="always" Required="false" Mask="false">30005</Config>
+</Container>

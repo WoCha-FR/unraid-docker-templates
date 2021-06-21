@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DevTar</Name>
+  <Repository>jeremiec82/tar1090</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>Other: Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/tar1090.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/tar1090.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1623510462</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8082</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>10.42.1.250</Value>
+      <Name>BEAST_HOST</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false">10.42.1.250</Config>
+  <Config Name="http" Target="80" Default="" Mode="tcp" Description="Conteneur Port: 80" Type="Port" Display="always" Required="true" Mask="false">8082</Config>
+</Container>
