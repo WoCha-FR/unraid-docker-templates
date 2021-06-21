@@ -8,12 +8,12 @@
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
+  <Project>https://github.com/Jeremie-C/docker-tar1090</Project>
   <Overview/>
   <Category>Other: Status:Beta</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/tar1090.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/tar1090.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/tar1090.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/tar1090.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

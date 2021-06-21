@@ -2,18 +2,18 @@
 <Container version="2">
   <Name>ADSB-Exchange Feeder</Name>
   <Repository>jeremiec82/adsbx</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/jeremiec82/adsbx/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
+  <Project>https://github.com/Jeremie-C/docker-ADSBx</Project>
   <Overview/>
   <Category>Other: Status:Beta</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/adsbx-feeder.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/adsbx.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/adsbx-feeder.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/adsbx.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

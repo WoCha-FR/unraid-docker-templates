@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>ReadsbNet</Name>
   <Repository>jeremiec82/readsb-net</Repository>
-  <Registry>https://hub.docker.com/u/jeremiec82/readsb-net/</Registry>
+  <Registry>https://hub.docker.com/r/jeremiec82/readsb-net/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
@@ -12,8 +12,8 @@
   <Overview>Mode-S/ADSB/TIS decoder running in a docker container.</Overview>
   <Category>Network:Other Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/readsbnet.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/readsb.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/readsbnet.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/readsb.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

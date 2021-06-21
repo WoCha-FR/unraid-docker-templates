@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Debian-Dev</Name>
   <Repository>jeremiec82/debian-dev</Repository>
-  <Registry>https://hub.docker.com/u/jeremiec82/debian-dev/</Registry>
+  <Registry>https://hub.docker.com/r/jeremiec82/debian-dev/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
@@ -12,8 +12,8 @@
   <Overview>Apercu</Overview>
   <Category>Other: Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/debian-dev.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/wocha-fr/unraid-docker-tpl/main/wocha/imgs/debian.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/debian-dev.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/debian.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
