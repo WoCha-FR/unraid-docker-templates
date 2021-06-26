@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RadarBox-Feeder</Name>
+  <Repository>jeremiec82/flightaware</Repository>
+  <Registry>https://hub.docker.com/r/jeremiec82/flightaware/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Jeremie-C/docker-piaware</Project>
+  <Overview/>
+  <Category>Other: Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/flightaware.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/flightaware.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>30105</HostPort>
+        <ContainerPort>30105</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>BEAST_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>FEEDER_ID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="127.0.0.1" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="FEEDER_ID" Target="FEEDER_ID" Default="" Mode="" Description="Conteneur Variable: FEEDER_ID" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MLAT Results" Target="30105" Default="30105" Mode="tcp" Description="MLAT result input connextions" Type="Port" Display="advanced" Required="false" Mask="false">30105</Config>
+</Container>
