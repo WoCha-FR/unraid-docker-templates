@@ -16,8 +16,7 @@
   <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/tar1090.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1623510462</DateInstalled>
+  <CPUset/>  <DateInstalled>1623510462</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -25,7 +24,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8082</HostPort>
+        <HostPort/>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -34,7 +33,7 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value>10.42.1.250</Value>
+      <Value/>
       <Name>BEAST_HOST</Name>
       <Mode/>
     </Variable>

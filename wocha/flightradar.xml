@@ -11,7 +11,7 @@
   <Project>https://github.com/Jeremie-C/docker-flightradar24</Project>
   <Overview/>
   <Category>Other: Status:Beta</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:8754]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/flightradar.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/flightradar.png</Icon>
   <ExtraParams/>
@@ -24,7 +24,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8754</HostPort>
+        <HostPort/>
         <ContainerPort>8754</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -33,12 +33,12 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value></Value>
+      <Value/>
       <Name>BEAST_HOST</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value></Value>
+      <Value/>
       <Name>FR24_KEY</Name>
       <Mode/>
     </Variable>
@@ -46,5 +46,5 @@
   <Labels/>
   <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="127.0.0.1" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="FR24_KEY" Target="FR24_KEY" Default="" Mode="" Description="Conteneur Variable: FR24_KEY" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="WEB Interface" Target="8754" Default="8754" Mode="tcp" Description="Settings Interface" Type="Port" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="WEB Interface" Target="8754" Default="" Mode="tcp" Description="Settings Interface" Type="Port" Display="advanced" Required="false" Mask="false"></Config>
 </Container>

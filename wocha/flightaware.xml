@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>RadarBox-Feeder</Name>
+  <Name>Flightaware-Feeder</Name>
   <Repository>jeremiec82/flightaware</Repository>
   <Registry>https://hub.docker.com/r/jeremiec82/flightaware/</Registry>
   <Network>bridge</Network>
@@ -24,7 +24,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>30105</HostPort>
+        <HostPort/>
         <ContainerPort>30105</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -46,5 +46,5 @@
   <Labels/>
   <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="127.0.0.1" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="FEEDER_ID" Target="FEEDER_ID" Default="" Mode="" Description="Conteneur Variable: FEEDER_ID" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="MLAT Results" Target="30105" Default="30105" Mode="tcp" Description="MLAT result input connextions" Type="Port" Display="advanced" Required="false" Mask="false">30105</Config>
+  <Config Name="MLAT Results" Target="30105" Default="" Mode="tcp" Description="MLAT result input connextions" Type="Port" Display="advanced" Required="false" Mask="false"></Config>
 </Container>

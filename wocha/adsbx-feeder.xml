@@ -22,12 +22,18 @@
   <Description/>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort/>
+        <ContainerPort>30105</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data/>
   <Environment>
     <Variable>
-      <Value>127.0.0.1</Value>
+      <Value></Value>
       <Name>BEAST_HOST</Name>
       <Mode/>
     </Variable>
@@ -58,10 +64,11 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="127.0.0.1" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
-  <Config Name="ADSBX_UUID" Target="ADSBX_UUID" Default="" Mode="" Description="Conteneur Variable: ADSBX_UUID" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="LATITUDE" Target="LATITUDE" Default="" Mode="" Description="Conteneur Variable: LATITUDE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="LONGITUDE" Target="LONGITUDE" Default="" Mode="" Description="Conteneur Variable: LONGITUDE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="ALTITUDE" Target="ALTITUDE" Default="" Mode="" Description="Conteneur Variable: ALTITUDE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="MYUSERNAME" Target="MYUSERNAME" Default="" Mode="" Description="Conteneur Variable: MYUSERNAME" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="127.0.0.1" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="ADSBX_UUID" Target="ADSBX_UUID" Default="" Mode="" Description="Conteneur Variable: ADSBX_UUID" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="LATITUDE" Target="LATITUDE" Default="" Mode="" Description="Conteneur Variable: LATITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="LONGITUDE" Target="LONGITUDE" Default="" Mode="" Description="Conteneur Variable: LONGITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="ALTITUDE" Target="ALTITUDE" Default="" Mode="" Description="Conteneur Variable: ALTITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="MYUSERNAME" Target="MYUSERNAME" Default="" Mode="" Description="Conteneur Variable: MYUSERNAME" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="MLAT Results" Target="30105" Default="" Mode="tcp" Description="MLAT result input connextions" Type="Port" Display="advanced" Required="false" Mask="false" />
 </Container>
