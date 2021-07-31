@@ -9,14 +9,14 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/Jeremie-C/docker-tar1090</Project>
-  <Overview/>
+  <Overview></Overview>
   <Category>Other: Status:Beta</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:10900]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/tar1090.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/tar1090.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>  <DateInstalled>1623510462</DateInstalled>
+  <CPUset/>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -24,21 +24,27 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort/>
+        <HostPort>10900</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Data/>
-  <Environment>
-    <Variable>
-      <Value/>
-      <Name>BEAST_HOST</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/readsb</HostDir>
+      <ContainerDir>/var/readsb</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tar1090</HostDir>
+      <ContainerDir>/opt/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>  <Environment/>
   <Labels/>
-  <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false">10.42.1.250</Config>
-  <Config Name="http" Target="80" Default="" Mode="tcp" Description="Conteneur Port: 80" Type="Port" Display="always" Required="true" Mask="false">8082</Config>
+  <Config Name="Port" Target="80" Default="10900" Mode="tcp" Description="This is the Web UI port you can access via a web browser." Type="Port" Display="always" Required="true" Mask="false">10900</Config>
+  <Config Type="Path" Name="Readsb Data" Target="/var/readsb" Default="/mnt/user/appdata/readsb" Mode="ro" Display="advanced-hide" Required="true" Description="This is where Readsb Container store its databases and history.">/mnt/user/appdata/readsb</Config>
+  <Config Type="Path" Name="Applications Data" Target="/opt/data" Default="/mnt/user/appdata/tar1090" Mode="rw" Display="advanced-hide" Required="true" Description="Tar1090, Timelapse1090 and Graph1090 output files and history.">/mnt/user/appdata/tar1090</Config>  
 </Container>
+<
