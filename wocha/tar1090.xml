@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>DevTar</Name>
+  <Name>Tar1090</Name>
   <Repository>jeremiec82/tar1090</Repository>
   <Registry/>
   <Network>bridge</Network>
@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://github.com/Jeremie-C/docker-tar1090</Project>
   <Overview></Overview>
-  <Category>Other: Status:Beta</Category>
+  <Category>Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:10900]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/tar1090.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/tar1090.png</Icon>
@@ -38,13 +38,13 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/tar1090</HostDir>
-      <ContainerDir>/opt/data</ContainerDir>
+      <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>  <Environment/>
   <Labels/>
   <Config Name="Port" Target="80" Default="10900" Mode="tcp" Description="This is the Web UI port you can access via a web browser." Type="Port" Display="always" Required="true" Mask="false">10900</Config>
   <Config Type="Path" Name="Readsb Data" Target="/var/readsb" Default="/mnt/user/appdata/readsb" Mode="ro" Display="advanced-hide" Required="true" Description="This is where Readsb Container store its databases and history.">/mnt/user/appdata/readsb</Config>
-  <Config Type="Path" Name="Applications Data" Target="/opt/data" Default="/mnt/user/appdata/tar1090" Mode="rw" Display="advanced-hide" Required="true" Description="Tar1090, Timelapse1090 and Graph1090 output files and history.">/mnt/user/appdata/tar1090</Config>  
+  <Config Type="Path" Name="Applications Data" Target="/data" Default="/mnt/user/appdata/tar1090" Mode="rw" Display="advanced-hide" Required="true" Description="Tar1090, Timelapse1090 and Graph1090 output files and history.">/mnt/user/appdata/tar1090</Config>  
 </Container>
 <
