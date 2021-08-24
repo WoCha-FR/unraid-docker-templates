@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://github.com/Jeremie-C/docker-radarbox</Project>
   <Overview/>
-  <Category>Other: Status:Beta</Category>
+  <Category>Other: Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/radarbox.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/radarbox.png</Icon>
@@ -22,13 +22,7 @@
   <Description/>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort/>
-        <ContainerPort>30105</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Publish/>
   </Networking>
   <Data/>
   <Environment>
@@ -62,7 +56,6 @@
   <Config Name="BEAST_HOST" Target="BEAST_HOST" Default="127.0.0.1" Mode="" Description="Conteneur Variable: BEAST_HOST" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="LATITUDE" Target="LATITUDE" Default="" Mode="" Description="Conteneur Variable: LATITUDE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="LONGITUDE" Target="LONGITUDE" Default="" Mode="" Description="Conteneur Variable: LONGITUDE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="ALTITUDE" Target="ALTITUDE" Default="" Mode="" Description="Conteneur Variable: ALTITUDE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="ALTITUDE" Target="ALTITUDE" Default="" Mode="" Description="Conteneur Variable: ALTITUDE (513m, 1250ft)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="RBFEEDER_KEY" Target="RBFEEDER_KEY" Default="" Mode="" Description="Conteneur Variable: RBFEEDER_KEY" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="MLAT Results" Target="30105" Default="" Mode="tcp" Description="MLAT result input connextions" Type="Port" Display="advanced" Required="false" Mask="false"></Config>
 </Container>

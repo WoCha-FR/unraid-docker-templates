@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://github.com/Jeremie-C/docker-planefinder</Project>
   <Overview/>
-  <Category>Other: Status:Beta</Category>
+  <Category>Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:30053]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/planefinder.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/WoCha-FR/unraid-docker-templates/master/wocha/imgs/planefinder.png</Icon>
@@ -58,5 +58,5 @@
   <Config Name="LATITUDE" Target="LATITUDE" Default="" Mode="" Description="Conteneur Variable: LATITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="LONGITUDE" Target="LONGITUDE" Default="" Mode="" Description="Conteneur Variable: LONGITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="SHARECODE" Target="SHARECODE" Default="" Mode="" Description="Conteneur Variable: SHARECODE" Type="Variable" Display="always" Required="false" Mask="false" />
-  <Config Name="HTTP" Target="30053" Default="" Mode="tcp" Description="Conteneur Port: 30053" Type="Port" Display="advanced" Required="true" Mask="false" />
+  <Config Name="HTTP" Target="30053" Default="30053" Mode="tcp" Description="Conteneur Port: 30053" Type="Port" Display="advanced" Required="true" Mask="false" />
 </Container>

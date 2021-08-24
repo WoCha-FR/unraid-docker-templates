@@ -22,13 +22,7 @@
   <Description/>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort/>
-        <ContainerPort>30105</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Publish/>
   </Networking>
   <Data/>
   <Environment>
@@ -70,5 +64,4 @@
   <Config Name="LONGITUDE" Target="LONGITUDE" Default="" Mode="" Description="Conteneur Variable: LONGITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="ALTITUDE" Target="ALTITUDE" Default="" Mode="" Description="Conteneur Variable: ALTITUDE" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="MYUSERNAME" Target="MYUSERNAME" Default="" Mode="" Description="Conteneur Variable: MYUSERNAME" Type="Variable" Display="always" Required="true" Mask="false" />
-  <Config Name="MLAT Results" Target="30105" Default="" Mode="tcp" Description="MLAT result input connextions" Type="Port" Display="advanced" Required="false" Mask="false" />
 </Container>
